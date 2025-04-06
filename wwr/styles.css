@@ -1,0 +1,162 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navegación */
+header {
+  background-color: #222;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+header img {
+  height: 60px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Imagen de perfil */
+main img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Contenido principal */
+main {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+/* Aside */
+aside {
+  width: 300px;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #e0f7fa;
+  color: #333;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+p {
+  padding: 0;
+}
+
+/* History Section */
+.history {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.history h2 {
+  margin-bottom: 1rem;
+  color: #0077b6;
+}
+
+/* Adventure Section */
+.adventure {
+  padding: 2rem;
+  background-color: #e0f7fa;
+}
+
+.adventure h2 {
+  margin-bottom: 1rem;
+  color: #0077b6;
+}
+
+.adventure-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.adventure-images figure {
+  width: 200px;
+  text-align: center;
+}
+
+.adventure-images img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.adventure-images figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background-color: #0077b6;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
