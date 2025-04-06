@@ -114,7 +114,6 @@ nav a:hover {
   object-fit: cover; /* Mantiene las imágenes proporcionadas y recorta el exceso */
 }
 
-
 /* Footer */
 footer {
   display: flex;
