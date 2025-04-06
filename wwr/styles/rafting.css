@@ -98,15 +98,6 @@ nav a:hover {
 /* Adventure Section */
 .adventure {
   padding: 2rem;
-}
-
-.adventure h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #024059;
-}
-
-.adventure {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
@@ -114,12 +105,15 @@ nav a:hover {
 
 .adventure figure {
   text-align: center;
+  margin: 0; /* Eliminar márgenes que puedan causar desorden */
 }
 
 .adventure img {
-  width: 100%;
+  width: 100%; /* Asegurarse de que las imágenes ocupen todo el contenedor */
   border-radius: 8px;
+  object-fit: cover; /* Mantiene las imágenes proporcionadas y recorta el exceso */
 }
+
 
 /* Footer */
 footer {
