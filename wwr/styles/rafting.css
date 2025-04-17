@@ -177,11 +177,13 @@ footer .social-icons a img {
 }
 
 .employee-profiles img {
-  width: 200px;
-  height: auto;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 
 .employee-profiles figcaption {
   margin-top: 0.5rem;
