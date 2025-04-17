@@ -40,47 +40,34 @@
             <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" class="google-map" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
-       
-               <section class="employee-profiles">
-    <h2>Meet Our Team</h2>
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
 
-    <!-- Wrapping each image and figcaption pair in a <figure> element -->
-    <figure>
-        <img src="images/employee1.jpg" alt="Employee 1" id="employee1">
-        <figcaption>John Doe - Rafting Guide</figcaption>
-    </figure>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
 
-    <figure>
-        <img src="images/employee2.jpg" alt="Employee 2" id="employee2">
-        <figcaption>Jane Smith - Marketing Manager</figcaption>
-    </figure>
+                <label for="messagePurpose">Message Purpose:</label><br>
+                <input type="radio" id="general" name="messagePurpose" value="General Inquiry" required>
+                <label for="general">General Inquiry</label><br>
 
-    <figure>
-        <img src="images/employee3.jpg" alt="Employee 3" id="employee3">
-        <figcaption>Emily Johnson - Customer Service</figcaption>
-    </figure>
+                <input type="radio" id="reservation" name="messagePurpose" value="Reservation Question" required>
+                <label for="reservation">Reservation Question</label><br>
 
-    <figure>
-        <img src="images/employee4.jpg" alt="Employee 4" id="employee4">
-        <figcaption>Michael Brown - Operations</figcaption>
-    </figure>
+                <input type="radio" id="suggestion" name="messagePurpose" value="Website Suggestion" required>
+                <label for="suggestion">Website Suggestion</label><br><br>
 
-    <figure>
-        <img src="images/employee5.jpg" alt="Employee 5" id="employee5">
-        <figcaption>Sarah White - Rafting Expert</figcaption>
-    </figure>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-    <figure>
-        <img src="images/employee6.jpg" alt="Employee 6" id="employee6">
-        <figcaption>David Green - Safety Officer</figcaption>
-    </figure>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
 
-    <figure>
-        <img src="images/employee7.jpg" alt="Employee 7" id="employee7">
-        <figcaption>Rachel Adams - Sales Coordinator</figcaption>
-    </figure>
-</section>
-
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
 
         <section class="employee-profiles">
             <h2>Meet Our Team</h2>
@@ -133,4 +120,4 @@
     </footer>
 </body>
 
-</html>
+</html> 
