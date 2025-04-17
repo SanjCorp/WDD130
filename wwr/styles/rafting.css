@@ -150,7 +150,7 @@ footer .social-icons a img {
 }
 
 .employee-grid img {
-  width: 150px;
+  width: 50px;
   height: auto;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -173,11 +173,11 @@ footer .social-icons a img {
 }
 
 .employee-profiles figure {
-  max-width: 150px;
+  max-width: 50px;
 }
 
 .employee-img {
-  width: 100%;
+  width: 20%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
