@@ -1,65 +1,107 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Bolivia-santacruz Rafting to inquire about our adventures, find our location, or ask any questions.">
+    <meta name="description" content="Contact Bolivia-santacruz Rafting to inquire about our rafting adventures, find our office location, or reach out with any questions you may have.">
     <meta name="author" content="Ricardo Sanjines">
     <title>Contact Us - Bolivia-santacruz Rafting</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav>
-            <!-- Tu código de navegación aquí -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <h1>Contact Us</h1>
-        
-        <!-- Google Map Embed -->
-        <section>
-            <h2>Our Location</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=..." class="google-map" allowfullscreen="" loading="lazy"></iframe>
+
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Address: 123 Rafting Road, Santa Cruz, Bolivia</p>
+            <p>Phone: (591) 123-456-7890</p>
+            <p>Email: <a href="mailto:info@bolivia-santacruzrafting.com">info@bolivia-santacruzrafting.com</a></p>
         </section>
 
-        <section>
-            <h2>Contact Form</h2>
-            <form action="#" method="POST">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+        <section id="google-map">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" class="google-map" allowfullscreen="" loading="lazy"></iframe>
+        </section>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
 
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
 
-                <label for="newsletter">Subscribe to Newsletter</label>
-                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="message">Message Purpose:</label><br>
+                <input type="radio" id="general" name="messagePurpose" value="General Inquiry" required>
+                <label for="general">General Inquiry</label><br>
+
+                <input type="radio" id="reservation" name="messagePurpose" value="Reservation Question" required>
+                <label for="reservation">Reservation Question</label><br>
+
+                <input type="radio" id="suggestion" name="messagePurpose" value="Website Suggestion" required>
+                <label for="suggestion">Website Suggestion</label><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
 
                 <button type="submit">Send Message</button>
             </form>
         </section>
 
-        <section>
-            <h2>Our Team</h2>
-            <img src="employee1.jpg" alt="Employee 1">
-            <figcaption>Employee 1</figcaption>
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <img src="images/employee1.jpg" alt="Employee 1" id="employee1">
+            <figcaption>John Doe - Rafting Guide</figcaption>
 
-            <img src="employee2.jpg" alt="Employee 2">
-            <figcaption>Employee 2</figcaption>
+            <img src="images/employee2.jpg" alt="Employee 2" id="employee2">
+            <figcaption>Jane Smith - Marketing Manager</figcaption>
 
-            <img src="employee3.jpg" alt="Employee 3">
-            <figcaption>Employee 3</figcaption>
+            <img src="images/employee3.jpg" alt="Employee 3" id="employee3">
+            <figcaption>Emily Johnson - Customer Service</figcaption>
+
+            <img src="images/employee4.jpg" alt="Employee 4" id="employee4">
+            <figcaption>Michael Brown - Operations</figcaption>
+
+            <img src="images/employee5.jpg" alt="Employee 5" id="employee5">
+            <figcaption>Sarah White - Rafting Expert</figcaption>
+
+            <img src="images/employee6.jpg" alt="Employee 6" id="employee6">
+            <figcaption>David Green - Safety Officer</figcaption>
+
+            <img src="images/employee7.jpg" alt="Employee 7" id="employee7">
+            <figcaption>Rachel Adams - Sales Coordinator</figcaption>
         </section>
     </main>
 
     <footer>
-        <p>Contact Bolivia-santacruz Rafting for inquiries: Address, Phone, Email.</p>
-        <p><a href="contact-us.html">Back to Contact Us Page</a></p>
+        <p>&copy; 2025 Bolivia-santacruz Rafting | All Rights Reserved</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </footer>
 </body>
+
 </html>
