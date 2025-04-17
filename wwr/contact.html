@@ -28,45 +28,42 @@
     <main>
         <h1>Contact Us</h1>
 
-        <section id="contact-info">
-            <h2>Contact Information</h2>
-            <p>Address: 123 Rafting Road, Santa Cruz, Bolivia</p>
-            <p>Phone: (591) 123-456-7890</p>
-            <p>Email: <a href="mailto:info@bolivia-santacruzrafting.com">info@bolivia-santacruzrafting.com</a></p>
-        </section>
+        <section class="contact-info-form">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> 123 Rafting Road, Santa Cruz, Bolivia</p>
+                <p><strong>Phone:</strong> (591) 123-456-7890</p>
+                <p><strong>Email:</strong> <a href="mailto:info@bolivia-santacruzrafting.com">info@bolivia-santacruzrafting.com</a></p>
+            </div>
 
-        <section id="google-map">
-            <h2>Our Location</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" class="google-map" allowfullscreen="" loading="lazy"></iframe>
-        </section>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
 
-        <section id="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+                    <label>Message Purpose:</label><br>
+                    <input type="radio" id="general" name="messagePurpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label><br>
 
-                <label>Message Purpose:</label><br>
-                <input type="radio" id="general" name="messagePurpose" value="General Inquiry" required>
-                <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="messagePurpose" value="Reservation Question" required>
+                    <label for="reservation">Reservation Question</label><br>
 
-                <input type="radio" id="reservation" name="messagePurpose" value="Reservation Question" required>
-                <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="messagePurpose" value="Website Suggestion" required>
+                    <label for="suggestion">Website Suggestion</label><br><br>
 
-                <input type="radio" id="suggestion" name="messagePurpose" value="Website Suggestion" required>
-                <label for="suggestion">Website Suggestion</label><br><br>
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-                <label for="message">Your Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
 
-                <input type="checkbox" id="subscribe" name="subscribe">
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
-
-                <button type="submit">Send Message</button>
-            </form>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
 
         <section class="employee-profiles">
@@ -105,6 +102,11 @@
                 <figcaption>Rachel Adams - Sales Coordinator</figcaption>
             </figure>
         </section>
+
+        <section id="google-map">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" class="google-map" allowfullscreen="" loading="lazy"></iframe>
+        </section>
     </main>
 
     <footer>
@@ -112,7 +114,7 @@
         <ul>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="terms.html">Terms of Service</a></li>
-            <li><a href="images/contact-wireframe.png" target="_blank">Contact Page Wireframe</a></li> <!-- Open in a new tab -->
+            <li><a href="images/contact-wireframe.png" target="_blank">Contact Page Wireframe</a></li>
         </ul>
     </footer>
 </body>
