@@ -1,77 +1,180 @@
-/* General Styles */
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+  max-width: 1200px;
+  margin: auto;
 }
 
-header, footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+/* Header with Grid */
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  padding: 1rem;
+  background-color: #024059;
+  color: white;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
+header img {
+  width: 120px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255,255,255,0.9);
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.hero article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* History Section */
+.history {
+  padding: 2rem;
+  background-color: #e6f2f5;
+}
+
+.history h2 {
+  margin-bottom: 1rem;
+  color: #024059;
+}
+
+/* Adventure Section */
+.adventure {
+  padding: 2rem;
+}
+
+.adventure h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #024059;
+}
+
+.adventure {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.adventure figure {
+  text-align: center;
+}
+
+.adventure img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
 footer {
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #024059;
+  color: white;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
-/* Google Map Styles */
-.google-map {
-    border: 0;
-    width: 100%;  /* Adjust to desired width */
-    height: 450px;  /* Adjust to desired height */
+footer p {
+  margin: 0.5rem 0;
 }
 
-/* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+footer .social-icons a img {
+  width: 32px;
+  height: 32px;
+  margin-left: 0.5rem;
+}
+.employee-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
 }
 
-label {
-    font-weight: bold;
+.employee-grid img {
+  width: 200px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-input, textarea, button {
-    padding: 10px;
-    font-size: 16px;
+.employee-grid figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.employee-profiles {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  text-align: center;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+.employee-profiles figure {
+  max-width: 200px;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-/* Employee Images Styles */
-img {
-    width: 100px; /* Adjust the size of images */
-    height: auto;
-    margin: 10px;
-}
-
-figcaption {
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-/* Other styles */
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.5rem;
+.employee-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
