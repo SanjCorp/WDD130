@@ -1,75 +1,106 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre nuestras excursiones de rafting en Santa Cruz, Bolivia. Ofrecemos experiencias únicas para todos los niveles.">
-    <meta name="author" content="Ricardo Sanjines">
-    <title>Rafting Trips</title>
-    <link rel="stylesheet" href="styles/rafting.css">
-  </head>
-  <body>
-    <header>
-      <img src="images/logo.png" alt="Bolivia-santacruz Rafting Logo">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Bolivia-santacruz Rafting for exciting adventure trips. Find our location, meet our staff, or send us a message." />
+  <meta name="author" content="Ricardo Sanjines" />
+  <title>Contact Us - Bolivia-santacruz Rafting</title>
 
-    <main>
-      <section class="contact-info" style="padding: 2rem;">
-        <h1>Contact Us</h1>
-        <p>Email: sanjglobalcorp@gmail.com</p>
-        <p>Phone: +591 63108637</p>
-        <p>Address: Calle Río Aventura 123, Santa Cruz, Bolivia</p>
-      </section>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-      <section class="contact-form" style="padding: 2rem; background-color: #f0f0f0;">
-        <h2>Send Us a Message</h2>
-        <form>
-          <label for="name">Full Name:</label><br>
-          <input type="text" id="name" name="name" required><br><br>
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Bolivia-santacruz Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required><br><br>
+  <main>
+    <section class="contact-info">
+      <h1>Contact Us</h1>
+      <p>Email: sanjglobalcorp@gmail.com</p>
+      <p>Phone: +591 63108637</p>
+      <p>Address: Calle Río Aventura 123, Santa Cruz, Bolivia</p>
+    </section>
 
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <section class="map">
+      <h2>Find Us Here</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.387994796308!2d-63.18271632579308!3d-18.480480281341555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e851924f1683%3A0x891e6cba62eb8e82!2sSanta%20Cruz%20de%20la%20Sierra!5e0!3m2!1ses-419!2sbo!4v1713235139649!5m2!1ses-419!2sbo"
+        width="100%"
+        height="300"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
 
-          <button type="submit">Send</button>
-        </form>
-      </section>
+    <section class="staff">
+      <h2>Meet Our Team</h2>
+      <div class="employee-profiles">
+        <figure>
+          <img src="images/employee1.jpg" alt="Adventure Guide" class="employee-img" />
+          <figcaption>Juan Pérez - Adventure Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Customer Service" class="employee-img" />
+          <figcaption>Maria López - Customer Service</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Office Manager" class="employee-img" />
+          <figcaption>Carlos Méndez - Office Manager</figcaption>
+        </figure>
+      </div>
+    </section>
 
-      <section class="map" style="padding: 3rem 1rem; text-align: center;">
-            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Find Us Here</h2>
-            <div style="max-width: 100%; margin: 0 auto;">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.1627879743264!2d-63.182549125671216!3d-17.67063178301144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e7efbf802ef9%3A0x7dfb0c5196be6b97!2sSanta%20Cruz%20de%20la%20Sierra!5e0!3m2!1ses!2sbo!4v1712307423342!5m2!1ses!2sbo" 
-                    width="100%" 
-                    height="400" 
-                    style="border:0; border-radius: 8px;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </section>
-        
-    </main>
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
 
-    <footer>
-        <p>&copy; 2024 Bolivia-santacruz Rafting | Ricardo Sanjines</p>
-        <nav class="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61571641296803&locale=es_LA" target="_blank">
-            <img src="images/facebook.png" alt="Facebook" />
-          </a>
-          <a href="https://www.instagram.com/sanj_corp/" target="_blank">
-            <img src="images/instagram.png" alt="Instagram" />
-          </a>
-        </nav>
-      </footer>
-  </body>
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <p>Purpose of your message:</p>
+        <label><input type="radio" name="purpose" value="General Inquiry" required /> General Inquiry</label><br />
+        <label><input type="radio" name="purpose" value="Reservation Question" /> Reservation Question</label><br />
+        <label><input type="radio" name="purpose" value="Website Suggestion" /> Website Suggestion</label><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+        <label>
+          <input type="checkbox" name="subscribe" />
+          Please subscribe me to the monthly newsletter
+        </label><br /><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Bolivia-santacruz | Ricardo Sanjines</p>
+    <nav class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61571641296803&locale=es_LA" target="_blank">
+        <img src="images/facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/sanj_corp/" target="_blank">
+        <img src="images/instagram.png" alt="Instagram" />
+      </a>
+    </nav>
+    <p><a href="images/contact-wireframe.png" target="_blank">View Wireframe</a></p>
+  </footer>
+</body>
 </html>
