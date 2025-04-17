@@ -173,7 +173,8 @@ footer .social-icons a img {
 }
 
 .employee-profiles figure {
-  max-width: 150px;
+  width: 5%; /* Esto las reduce al 5% del ancho del contenedor */
+  min-width: 50px; /* Para que no desaparezcan completamente en pantallas pequeñas */
 }
 
 .employee-profiles img {
@@ -184,10 +185,11 @@ footer .social-icons a img {
 }
 
 .employee-profiles figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  font-size: 0.7rem;
   font-weight: bold;
 }
+
 
 
 /* CONTACT PAGE STYLES */
